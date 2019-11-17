@@ -1,0 +1,122 @@
+.footer
+  background: #015750 url('../images/general/footer-bg.png') 100% 0 no-repeat
+  background-size: cover
+  color: #fff
+  overflow: hidden
+  
+  &__container
+    padding-top: 53px
+    padding-bottom: 60px
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    @include r(897px)
+      flex-wrap: wrap
+    // @include r(1107px)
+    //   flex-wrap: wrap
+    
+  &__logo-w
+    padding-right: 87px
+    max-width: 460px
+    width: 100%
+    
+    @include r(897px)
+      margin-bottom: 30px
+      max-width: 100%
+      padding-right: 30px
+      
+    @include r(425px)
+      padding-right: 0
+      order: 1
+
+  // &__logo
+
+
+  &__nav-w
+    padding-top: 10px
+    max-width: 380px
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    
+    @include r(897px)
+      margin-bottom: 30px
+      max-width: 100%
+      
+    @include r(425px)
+      flex-wrap: wrap
+      order: 2
+    
+  &__nav
+    margin-right: 90px
+    color: #FFF 
+    @include r(425px)
+      margin-right: 0
+      margin-bottom: 30px
+      width: 100%
+      
+    &:last-child
+      margin-right: 0
+      
+      @include r(425px)
+        margin-bottom: 0
+
+  &__copyright
+    margin-top: 24px
+    margin-bottom: 40px
+    color: #7ca69b
+    font-size: 11px
+    font-weight: 400
+    line-height: 1
+    
+    @include r(425px)
+      margin-bottom: 0
+    
+  &__text
+    color: #7ca69b
+    font-size: 10px
+    font-weight: 400
+    line-height: 1.6
+    
+    @include r(425px)
+      display: none
+
+  &__contacts
+    padding-top: 10px
+    
+    @include r(425px)
+      order: 3
+
+  &__corp,
+  &__address,
+  &__mail
+    position: relative
+    padding-left: 30px
+    color: #ffffff
+    font-size: 13px
+    font-weight: 400
+    line-height: 1.61538461538462
+    
+  &__corp
+    margin-bottom: 15px
+  &__address
+    margin-bottom: 20px
+    .footer__icon
+      top: 10px
+  &__mail
+    color: #7acfa5
+    font-size: 13px
+    font-weight: 400
+    line-height: 1
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+  &__icon
+    position: absolute
+    top: 0
+    left: 0
+    fill: #0db170
+    // transform: translateY(-50%)
+
+      

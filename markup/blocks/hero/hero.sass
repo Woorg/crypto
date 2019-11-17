@@ -1,0 +1,67 @@
+.hero
+  position: relative
+  
+  background-position: 50% 50%   
+  background-size: cover
+  background-repeat: no-repeat
+  background-color: #046247
+  &__container
+    padding-top: 82px
+    padding-bottom: 144px
+    text-align: center
+    
+  &__title-w
+    margin-left: -46px
+    
+    @include r(630px)
+      margin-left: 0
+
+  &__title
+    color: #ffffff
+    font-size: 32px
+    font-weight: 500
+    line-height: 1.675
+    
+    @include r(425px)
+      font-size: 26px
+    
+    em
+      display: block
+      font-size: 55px
+      
+      @include r(630px)
+        font-size: 34px
+
+      @include r(425px)
+        font-size: 28px
+
+    span
+      color: #2dc976
+
+
+  &__button
+    position: absolute
+    bottom: -36px
+    left: calc(50% - 21px)
+    padding-top: 20px
+    padding-right: 22px
+    padding-bottom: 10px
+    padding-left: 31px
+    height: 77px
+    border: 8px solid #ffffff
+    background-color: #12a77b
+    
+    color: #ffffff
+    font-size: 17px
+    font-weight: 500
+    border-radius: 40px
+    text-decoration: none
+    transform: translateX(-50%)
+    @include tr(all .3s ease)
+    
+    @include r(630px)
+      left: 50%
+    
+    &:hover
+      background-color: darken(#12a77b, 10)
+      @include tr(all .3s ease)

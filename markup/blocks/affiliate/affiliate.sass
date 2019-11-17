@@ -1,0 +1,203 @@
+.affiliate
+  margin-top: -30px
+  background: url('../images/general/affiliate-bottom.png') 50% 100% no-repeat 
+  overflow: hidden
+  &__top
+    height: 169px
+    background: #2a4941 url('../images/general/affiliate-bg.png') calc(100% + 51px) 0 no-repeat 
+    
+    @include r(987px)
+      background-image: none
+
+    .affiliate__container
+      padding-top: 40px
+      padding-bottom: 47px
+  // &__container
+
+  &__title
+    padding-bottom: 0
+    max-width: 263px 
+    color: #ffffff
+    @include r(987px)
+      max-width: 100%
+    &:after
+      display: none
+      
+  &__body
+    .affiliate__container
+      padding-top: 111px
+      padding-bottom: 126px
+      
+      @include r(987px)
+        padding-top: 60px
+        padding-bottom: 60px 
+  &__columns
+    margin-left: 100px
+    max-width: 1004px
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    flex-wrap: wrap
+    
+    @include r(1134px)
+      margin-left: 0
+      max-width: 100%
+      
+
+      
+  &__column
+    margin-right: 30px
+    max-width: 457px
+    width: 100%
+    flex-shrink: 1
+    flex-grow: 1
+    background: #FFF 
+    text-align: center
+    border-radius: 18px
+    box-shadow: 3px 8px 38px rgba(23, 46, 37, 0.23)
+      
+    @include r(987px)
+      margin-right: 0
+      margin-bottom: 50px
+      max-width: 100%
+
+    &:last-child
+      margin-right: 0
+      @include r(987px)
+        margin-bottom: 0
+      
+  &__column_second
+    .affiliate__coin
+      color: #3c3c3c
+
+  &__column-title
+    margin-top: -16px
+    padding-top: 10px
+    padding-right: 18px
+    padding-bottom: 10px
+    padding-left: 18px
+    
+    height: 39px
+    display: inline-block
+    vertical-align: top
+    background-color: #09a868
+    color: #ffffff
+    font-size: 20px
+    font-weight: 500
+    line-height: 1
+    
+    border-radius: 18px
+    box-shadow: 2px 4px 14px rgba(23, 46, 37, 0.1)
+
+    @include r(425px)
+      font-size: 16px
+
+  &__list
+    margin-top: 17px
+    margin-bottom: 7px
+    text-align: left
+
+  &__item
+    padding-top: 9px
+    padding-right: 30px
+    padding-bottom: 9px
+    padding-left: 24px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+      
+    @include r(425px)
+      padding-right: 10px
+      padding-left: 10px
+
+
+    &:nth-child(odd)
+      background-color: #f5f5f5
+
+
+    &:nth-child(even)
+      background: #FFF
+      
+    &:last-child
+       border-radius: 0 0 18px 18px   
+      
+
+
+  &__avatar
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    @include bg($affiliate-user)
+    
+  &__user-w
+    margin-left: 14px
+
+  &__user
+    margin-bottom: 6px
+    font-size: 13px
+    font-weight: 500
+    line-height: 1
+
+  &__date-w
+    display: flex
+    align-items: flex-start
+    color: #878787
+    font-size: 11px
+    font-weight: 400
+  &__date
+    margin-right: 10px
+
+  // &__time
+
+  &__coin
+    margin-left: auto
+    color: #09a868
+    font-size: 19px
+    font-weight: 700
+    line-height: 1
+    text-align: right
+    
+    @include r(425px)
+      font-size: 15px
+
+  &__bottom
+    padding-bottom: 41px
+
+  &__slider
+    margin-left: 100px
+    max-width: 960px
+    
+    @include r(1134px)
+      margin-left: 30px
+      margin-right: 30px
+      max-width: 100%
+
+  &__slider-item
+    padding-right: 16px
+  &__slider-image
+    border: 1px solid #e0e0e0
+    height: 64px
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    background-color: #ffffff
+    border-radius: 18px
+    box-shadow: 2px 4px 7px rgba(23, 46, 37, 0.05)
+    // img
+
+  .slick-arrow
+    @include bg($slider-arrow)
+    &:before
+      display: none
+  .slick-prev
+    z-index: 1
+    left: -40px
+    @include r(1134px)
+      left: -20px
+  .slick-next
+    right: -20px
+    transform: translateY(-50%) rotate(180deg)
+    @include r(1134px)
+      right: -10px

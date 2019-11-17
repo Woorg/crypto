@@ -1,0 +1,36 @@
+.cta
+  background-position: 50% 0
+  background-repeat: no-repeat
+  background-size: cover
+  &__container
+    position: relative
+    padding-top: 28px
+    padding-bottom: 36px
+    color: #fff 
+    text-align: left
+  
+  &__w
+    max-width: 870px
+    width: 100%
+    @include r(1131px)
+      // max-width: 640px
+      margin: auto
+      max-width: 610px
+      
+  &__image
+    position: absolute
+    z-index: 1
+    top: -61px
+    right: 17px
+    @include r(1131px)
+      display: none
+  
+  &__title
+    margin-bottom: 23px
+    color: #ffffff
+    font-size: 34px
+    font-weight: 700
+    line-height: 1.2
+    text-shadow: 0 0 29px rgba(0, 0, 0, 0.5)
+    span
+      color: #fdd408

@@ -1,0 +1,61 @@
+mixin header(data)
+  header.header
+    .header__top
+      .header__container.container
+        a.header__logo.logo(href="#")
+          img(src='assets/images/general/logo.png' srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x' alt="CryptoMining")
+
+        .header__lang.lang
+          .lang__title Выберите языек:
+          ul.lang__list
+            li.lang__item.lang__item_active
+              a.lang__link(href="#") 
+                != pugHelpers.Icon.call(locals, {iconName: 'russian-icon', className: 'lang__icon', iconWidth: '12', iconHeight: '12'})
+                span.lang__text rus
+            li.lang__item
+              a.lang__link(href="#") 
+                != pugHelpers.Icon.call(locals, {iconName: 'british-icon', className: 'lang__icon', iconWidth: '13', iconHeight: '13'})
+                span.lang__text eng
+            li.lang__item
+              a.lang__link(href="#") 
+                != pugHelpers.Icon.call(locals, {iconName: 'germany-icon', className: 'lang__icon', iconWidth: '13', iconHeight: '13'})
+                span.lang__text de
+            li.lang__item
+              a.lang__link(href="#") 
+                != pugHelpers.Icon.call(locals, {iconName: 'spain-icon', className: 'lang__icon', iconWidth: '12', iconHeight: '12'})
+                span.lang__text es
+            li.lang__item
+              a.lang__link(href="#") 
+                != pugHelpers.Icon.call(locals, {iconName: 'china-icon', className: 'lang__icon', iconWidth: '14', iconHeight: '14'})
+                span.lang__text ch
+
+
+        .header__auth
+          a.header__auth-button.header__auth-button_enter(href="#")
+            != pugHelpers.Icon.call(locals, {iconName: 'person-icon', className: 'header__auth-icon', iconWidth: '19', iconHeight: '19'})
+            | Войти
+          a.header__auth-sep или  
+          a.header__auth-button(href="#") зарегистрироваться
+
+     
+    .header__bottom
+      .header__container.container
+        nav.header__nav.nav
+          .nav__list-w
+            ul.nav__list
+              li.nav__item.nav__item_active
+                a.nav__link(href="#") Главная
+              li.nav__item
+                a.nav__link(href="#") О Компании
+              li.nav__item
+                a.nav__link(href="#") Тарифы
+              li.nav__item
+                a.nav__link(href="#") FAQ
+              li.nav__item
+                a.nav__link(href="#") Партнерам
+              li.nav__item
+                a.nav__link(href="#") Новости
+              li.nav__item
+                a.nav__link(href="#") Контакты
+              li.nav__item
+                a.nav__link(href="#") Карьера

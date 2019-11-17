@@ -1,0 +1,44 @@
+mixin footer(data)
+  footer.footer
+    .footer__container.container
+      .footer__logo-w
+        a.footer__logo.logo(href="#")
+          img(src='assets/images/general/logo-white.png' srcset='assets/images/general/logo-white@2x.png 2x, assets/images/general/logo-white@3x.png 3x' alt="CryptoMining")
+        
+        .footer__copyright © 2016 - 2019 Cryptomining.com, All rights reserved
+      
+        .footer__text Рейтинг исключительно оправдывает пак-шот, используя опыт предыдущих кампаний. Лидерство в продажах естественно создает обществвенный стратегический рыночный план. В общем, рекламная заставка требовальна к креативу. Интересно отметить, что психология восприятия рекламы вырождена. Согласно ставшей уже классической работе Филипа Котлера, повышение жизненных стандартов усиливает клиентский спрос. Наряду с этим, селекция бренда редко соответствует рыночным ожиданиям.
+      
+      .footer__nav-w
+        nav.footer__nav.nav.nav_secondary
+          ul.nav__list
+            li.nav__item
+              a.nav__link(href="#") Главная
+            li.nav__item
+              a.nav__link(href="#") О Компании
+            li.nav__item
+              a.nav__link(href="#") Тарифы
+            li.nav__item
+              a.nav__link(href="#") FAQ
+            
+        nav.footer__nav.nav.nav_secondary
+          ul.nav__list
+            li.nav__item
+              a.nav__link(href="#") Партнерам
+            li.nav__item
+              a.nav__link(href="#") Новости
+            li.nav__item
+              a.nav__link(href="#") Контакты
+            li.nav__item
+              a.nav__link(href="#") Карьера
+
+
+      .footer__contacts
+        .footer__corp CryptoMining LTD
+          != pugHelpers.Icon.call(locals, {iconName: 'corp-icon', className: 'footer__icon', iconWidth: '15', iconHeight: '15'})        
+        .footer__address Intershore Chambers, Road Town, Tortola, <br/>British Virgin Islands 12
+          != pugHelpers.Icon.call(locals, {iconName: 'address-icon', className: 'footer__icon', iconWidth: '12', iconHeight: '15'})
+        
+        a.footer__mail(href="mailto:contactus@cryptominig.com") contactus@cryptominig.com
+          != pugHelpers.Icon.call(locals, {iconName: 'mail-icon', className: 'footer__icon', iconWidth: '16', iconHeight: '12'})
+

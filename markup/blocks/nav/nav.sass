@@ -1,0 +1,124 @@
+.nav
+  position: relative
+  display: flex
+  
+  // @include r(1106px)
+  //   padding-top: 44px
+  //   padding-bottom: 0
+  
+  // @include r(425px)
+  //   padding-top: 12px
+  
+    
+
+  &__list
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    
+    // @include r(1106px)
+    //   flex-wrap: wrap
+    
+  &__item
+    margin-right: 25px
+    @include tr(all .3s ease)
+    
+    @include r(1160px)
+      margin-bottom: 10px
+      
+    @include r(594px)
+      margin-right: 0
+      width: 25%
+    
+    @include r(460px)
+      width: 50%
+      
+    &:hover
+      .nav__link
+        padding-right: 25px
+
+        padding-left: 25px
+        background-color: #0fa656
+        @include tr(all .3s ease)
+
+    &:last-child
+      margin-right: 0
+      
+  
+      
+  &__item_active
+    
+    .nav__link
+      padding-right: 25px
+
+      padding-left: 25px
+
+      background-color: #0fa656
+      @include tr(all .3s ease)
+      
+  &__link
+    padding-top: 11px
+    padding-right: 25px
+    padding-bottom: 11px
+    padding-left: 25px
+    height: 37px
+    display: block
+    color: #fff
+    font-size: 15px
+    font-weight: 500
+    text-decoration: none
+    border-radius: 18px
+    box-shadow: 1px 3px 10px rgba(19, 153, 113, 0.19)
+    @include tr(all .3s ease)
+
+    @include r(594px)
+      white-space: nowrap
+
+
+.nav
+  &.nav_secondary
+
+    // @include r(1106px)
+    //   // margin-top: 0
+    //   padding-top: 0
+    //   max-width: 100%
+    //   width: 100%
+      
+    .nav__trigger-icon
+      fill: #fff
+    .nav__list
+      display: block
+      @include r(1106px)
+        max-width: 100%
+        width: 100%
+
+    .nav__item
+      margin-right: 0
+      margin-bottom: 30px
+      color: #FFF
+      @include tr(all .3s ease)
+      
+      &:last-child
+        margin-bottom: 0
+     
+      &:hover
+        .nav__link
+          background: transparent 
+          color: darken(#fff, 10)
+          @include tr(all .3s ease)
+      
+
+   
+    .nav__link
+      border: none
+      padding-top: 0
+      padding-right: 0
+      padding-bottom: 0
+      padding-left: 0
+      height: auto
+      color: #ffffff
+      font-size: 15px
+      font-weight: 500
+      line-height: 1
+      box-shadow: none
+      @include tr(all .3s ease)

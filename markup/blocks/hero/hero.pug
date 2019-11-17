@@ -1,0 +1,10 @@
+mixin hero(data)
+  section.hero.lazy(data-bg="url('assets/images/general/hero-bg.jpg')")&attributes(attributes)
+    +header()
+    .hero__container.container
+      .hero__title-w
+        h1.hero__title 
+          em Зарегистрируйтесь 
+          | и получите 
+          span бонус 1$
+      a.hero__button(href="#") Зарегистрироваться

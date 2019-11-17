@@ -1,0 +1,73 @@
+.stats
+  overflow: hidden
+  &__container
+    padding-top: 118px
+    padding-bottom: 69px
+  &__list
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    flex-wrap: wrap
+  &__item
+    margin-right: 84px
+    text-align: left
+    
+    @include r(1178px)
+      margin-right: 70px    
+
+    @include r(1152px)
+      margin-bottom: 30px
+      flex-grow: 1
+      
+    @include r(953px)
+      margin-right: 0
+      width: 33%
+      flex-grow: 0
+
+    @include r(670px)
+      width: 50%
+      
+    @include r(430px)
+      width: 100%
+
+
+    &:last-child
+
+      margin-right: -30px
+      
+      @include r(1178px)
+        margin-right: 0
+      
+  &__item_1
+    .stats__icon
+      @include bg($advantages-icon-1)
+  &__item_2
+    .stats__icon
+      @include bg($advantages-icon-2)
+  &__item_3
+    .stats__icon
+      @include bg($advantages-icon-3)
+  &__item_4
+    .stats__icon
+      @include bg($advantages-icon-4)
+  &__item_5
+    .stats__icon
+      @include bg($advantages-icon-5)
+
+  &__icon
+    margin-bottom: 15px
+  &__item-title
+    margin-bottom: 17px
+    font-size: 15px
+    font-weight: 500
+    line-height: 1
+  &__num
+    color: #12a77b
+    font-size: 35px
+    font-weight: 700
+    line-height: 1
+    
+  &__curr
+    font-size: 14px
+    text-transform: uppercase
+
