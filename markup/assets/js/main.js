@@ -56,25 +56,6 @@ import svg4everybody from 'svg4everybody';
 
   $(function() {
 
-    /*
-      Navigation
-
-    */
-
-    // const $navTrigger = $('.nav__trigger');
-
-    // $navTrigger.on('click', function (e) {
-    //   e.preventDefault();
-    //   $(this).toggleClass('nav__trigger_active');
-    // });
-
-
-    // $(document).on('click', function(e) {
-    //   if (!$(e.target).closest('.nav__trigger_active').length) {
-    //       $navTrigger.removeClass('nav__trigger_active');
-    //   }
-    // });
-
 
     /*
     Slider
@@ -88,7 +69,7 @@ import svg4everybody from 'svg4everybody';
         dots: false,
         arrows: true,
         // loop: false,
-        // lazyLoad: 'ondemand',
+        lazyLoad: 'ondemand',
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -114,18 +95,74 @@ import svg4everybody from 'svg4everybody';
       });
     }
 
+    // Range slider
 
-    /* 
-      Callback
-    */
 
-    // const $callbackTrigger = $('.open-popup');
+    var sliders = document.getElementsByClassName("block__range-slider");
 
-    // $callbackTrigger.magnificPopup({
-    //   type:'inline',
-    //   midClick: true 
-    // });
+    if( sliders.length > 0 ) {
+      for (var i = 0; i < sliders.length; i++) {
+        noUiSlider.create(sliders[i], {
+          start: [0],
+          step: 10,
+          // animate: true,
+          // behaviour: 'snap',
+          connect: [true, false],
+          range: {
+              'min': [0],
+              'max': [100]
+          },
+          format: wNumb({
+            decimals: 0,
+            suffix: ' %',
+          })
+        });
+      }
 
+      sliders[0].noUiSlider.on("slide", function() {
+          $("#litecoin-range-value").html(sliders[0].noUiSlider.get());
+      });
+
+      sliders[1].noUiSlider.on("slide", function() {
+          $("#dogecoin-range-value").html(sliders[1].noUiSlider.get());
+      });
+
+      sliders[2].noUiSlider.on("slide", function() {
+          $("#usd-range-value").html(sliders[2].noUiSlider.get());
+      });
+
+      
+    }
+
+
+
+
+
+    // Results
+
+    $('.block__predict').on('click', function (e) {
+      e.preventDefault();
+      $(this).toggleClass('block__predict_active');
+      $(this).children('.block__result').toggleClass('block__result_active');
+    });
+
+
+    $(document).on('click', function(e) {
+      if (!$(e.target).closest('.block__predict_active').length) {
+        $('.block__predict').removeClass('block__predict_active');
+        $('.block__result').removeClass('block__result_active');
+        
+      }
+
+    });
+
+
+    // Faq
+
+    $('.faq__term').on('click', function () {
+      $(this).parent().siblings().removeClass('faq__item_active');
+      $(this).parent().addClass('faq__item_active');
+    });
 
 
     function pageWidget(pages) {
@@ -140,7 +177,9 @@ import svg4everybody from 'svg4everybody';
   
     pageWidget([
       'index',
-
+      'personal',
+      'faq',
+      'elements',
 
     ]);
 

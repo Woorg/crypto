@@ -3,16 +3,16 @@ mixin calc(data)
     .calc__container.container
       h2.calc__title.title Калькулятор заработка
         
-        .calc__rounds
-          .calc__round
-          .calc__round.calc__round_2
-          .calc__round.calc__round_3
+        span.calc__rounds
+          span.calc__round
+          span.calc__round.calc__round_2
+          span.calc__round.calc__round_3
           //- .calc__icon-w
           != pugHelpers.Icon.call(locals, {iconName: 'calc-icon', className: 'calc__icon', iconWidth: '38', iconHeight: '38'})
 
       .calc__w
         .calc__form-title Рассчитайте сумму инвестиций
-        form.calc__form.form.form_calc(action="", method="post")
+        form.calc__form.form.form_calc(action="#", method="post")
           .form__row
             .form__field.form__field_price
               label.form__label
@@ -28,15 +28,15 @@ mixin calc(data)
 
                   label.form__label
                     input.form__radio(type="radio" name='coin' value='Litecoin' checked)
-                    .form__label-text Litecoin
+                    span.form__label-text Litecoin
                 .form__field.form__field_radio
                   label.form__label
                     input.form__radio(type="radio" name='coin' value='Dogecoin')
-                    .form__label-text Dogecoin
+                    span.form__label-text Dogecoin
                 .form__field.form__field_radio
                   label.form__label
                     input.form__radio(type="radio" name='coin' value='USD')
-                    .form__label-text USD
+                    span.form__label-text USD
 
           input.form__submit.button(type="submit", value="Рассчитать")
       

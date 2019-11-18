@@ -8,6 +8,7 @@
     justify-content: flex-start
     align-items: flex-start
     flex-wrap: wrap
+   
   &__item
     margin-right: 84px
     text-align: left
@@ -29,6 +30,7 @@
       
     @include r(430px)
       width: 100%
+      text-align: center
 
 
     &:last-child
@@ -56,6 +58,9 @@
 
   &__icon
     margin-bottom: 15px
+    @include r(430px)
+      margin-right: auto
+      margin-left: auto
   &__item-title
     margin-bottom: 17px
     font-size: 15px

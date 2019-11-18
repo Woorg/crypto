@@ -1,1 +1,96 @@
-// .side
+.side
+  display: flex
+  flex-direction: column
+  
+  &__balance
+    position: relative
+    margin-bottom: 22px
+    padding-top: 40px
+    padding-bottom: 26px
+    padding-left: 30px
+    background: url('../images/general/balance-bg.png') 0 0 no-repeat
+    background-size: cover 
+    color: #FFF
+    border-radius: 18px
+    
+    @include r(1024px)
+      order: 1     
+      
+  &__balance-title
+    margin-bottom: 34px
+    color: #ffffff
+    font-size: 24px
+    font-weight: 500
+    line-height: 1
+    
+  // &__button
+
+  &__total
+    position: absolute
+    top: 5px
+    right: -55px
+  &__total-val
+    margin-bottom: 2px
+    font-size: 31px
+    font-weight: 700
+  &__total-text
+    sub
+      display: inline-block
+      vertical-align: baseline
+      font-size: 14px
+      font-weight: 400
+  
+  &__nav
+    margin-bottom: 30px
+
+
+.side-nav
+
+  background-color: #f3f3f3
+  border-radius: 18px
+  // &__list
+    
+  &__item
+    border-bottom: 1px solid #E5E5E5
+    &:first-child
+      .side-nav__link
+        border-radius: 18px 18px 0 0
+    &:last-child
+      border-bottom: 1px solid transparent
+      .side-nav__link
+        border-radius: 0 0 18px 18px
+      
+  &__item_mining
+    .side-nav__icon
+      left: 23px
+  &__item_withdraw
+    .side-nav__icon
+      left: 23px
+      @include bg($withdrawal-icon)
+      
+  &__link
+    position: relative
+    padding-top: 20px
+    padding-bottom: 20px
+    padding-left: 60px
+    display: block
+    background-color: #f3f3f3
+    color: #000000
+    font-size: 14px
+    font-weight: 400
+    line-height: 1
+    text-decoration: none
+    @include tr(all .3s ease)
+    &:hover
+      background-color: darken(#f3f3f3, 10)
+      @include tr(all .3s ease)
+
+    
+  &__icon
+    position: absolute
+    top: 50%
+    left: 20px
+    fill: #959595
+    
+    transform: translateY(-50%)
+

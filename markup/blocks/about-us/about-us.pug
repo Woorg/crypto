@@ -2,7 +2,7 @@ mixin about-us(data)
   section.about-us
     .about-us__container.container
       .about-us__image
-        img(src='assets/images/general/about-image.png' srcset='assets/images/general/about-image@2x.png 2x, assets/images/general/about-image@3x.png 3x')
+        img.lazy(data-src='assets/images/general/about-image.png' data-srcset='assets/images/general/about-image@2x.png 2x, assets/images/general/about-image@3x.png 3x' alt="")
 
       .about-us__w
         h2.about-us__title.title О нашей компании

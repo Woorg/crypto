@@ -1,0 +1,178 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../blocks/head/head.pug
+  include ../blocks/header/header.pug
+  
+  include ../blocks/hero/hero.pug
+  include ../blocks/stats/stats.pug
+  include ../blocks/about-us/about-us.pug
+  include ../blocks/rates/rates.pug
+  include ../blocks/calc/calc.pug
+  include ../blocks/advantages/advantages.pug
+  include ../blocks/affiliate/affiliate.pug
+  include ../blocks/side/side.pug
+  include ../blocks/content/content.pug
+
+  //- include ../blocks/services/services.pug
+  //- include ../blocks/projects/projects.pug
+
+
+  //- include ../blocks/principles/principles.pug
+  //- include ../blocks/useful/useful.pug
+
+  //- include ../blocks/schema/schema.pug
+  //- include ../blocks/clients/clients.pug
+  //- include ../blocks/history/history.pug
+  //- include ../blocks/cooperation/cooperation.pug
+
+  //- include ../blocks/map/map.pug
+  include ../blocks/faq/faq.pug
+  include ../blocks/cta/cta.pug
+
+  include ../blocks/footer/footer.pug
+  include ../blocks/popup/popup.pug
+
+  head
+    +head(head.defaults)
+  body.page.page_inner
+    | %=symbols=%
+    +header-personal().header_inner
+    //- end header
+    main.page__inner.container
+      .page__headers
+        h1.title.title_h1 Header h1
+        h2.title.title_h2 Header h2
+        h3.title.title_h3 Header h3
+        h4.title.title_h4 Header h4
+        h5.title.title_h5 Header h5
+      
+      .page__text.wysiwyg
+        p Рейтинг исключительно оправдывает пак-шот, используя опыт предыдущих кампаний. Лидерство в продажах естественно создает обществвенный стратегический рыночный план. В общем, рекламная заставка требовальна к креативу. Интересно отметить, что психология восприятия рекламы вырождена. 
+        p Согласно ставшей уже классической работе Филипа Котлера, повышение жизненных стандартов усиливает клиентский спрос. Наряду с этим, селекция бренда редко соответствует рыночным ожиданиям.
+
+      .page__buttons
+        a.button(href="#") Инвестировать
+        a.button.button_active(href="#") Инвестировать
+
+      .page__form
+        form.form-general(action="/", method="post")
+          .form-general__row
+            .form-general__checkbox-w
+              .form-general__field.form-general__field_checkbox
+                label.form-general__label
+                  input.form-general__checkbox(type="checkbox" name='some' value='0')
+                  span.form-general__checkbox-element 
+
+              .form-general__field.form-general__field_checkbox
+                label.form-general__label
+                  input.form-general__checkbox(type="checkbox" name='some1' value='1' checked)
+                  span.form-general__checkbox-element 
+            
+            .form-general__radio-w
+
+              .form-general__field.form-general__field_radio
+                label.form-general__label
+                  input.form-general__radio(type="radio" name='coin' value='Litecoin')
+                  span.form-general__radio-element 
+
+              .form-general__field.form-general__field_radio
+                label.form-general__label
+                  input.form-general__radio(type="radio" name='coin' value='Litecoin1' checked)
+                  span.form-general__radio-element 
+  
+      .page__buttons
+        a.button.button_secondary(href="#") Прогноз заработка
+        a.button.button_secondary.button_secondary_active(href="#") Прогноз заработка
+          
+      .page__table.table-w
+        table.table
+          thead
+            tr.table__header
+              th Название
+              th Цена
+          tbody
+            tr.table__row
+              td Alex
+              td 1.97 $
+            tr.table__row
+              td Mikle
+              td 1.97 $
+            tr.table__row
+              td Alexandr
+              td 1.97 $
+            tr.table__row
+              td Vika
+              td 1.97 $
+            tr.table__row
+              td Alex
+              td 1.97 $
+            tr.table__row
+              td Alex
+              td 1.97 $
+
+      .page__form
+        form.form-general__form(action="/", method="post")
+          .form-general__row
+            .form-general__field.form-general__field_input
+              input.form-general__input(type="text", name="name", value="", placeholder="Ваше имя")
+            .form-general__field.form-general__field_input
+              input.form-general__input(type="text", name="email", value="", placeholder="Ваш E-mail")
+            .form-general__field.form-general__field_input
+              input.form-general__input(type="text", name="pass", value="", placeholder="Пароль")
+
+            .form-general__field.form-general__field_privacy
+              .form-general__privacy
+                label.form-general__privacy-label
+                  .form-general__privacy-checkbox.form-general__field.form-general__field_checkbox
+                    label.form-general__label
+                      input.form-general__checkbox(type="checkbox" name='privacy' value='1' )
+                      span.form-general__checkbox-element 
+                
+                  .form-general__privacy-text Я согласен с правилами конфидициальности
+
+
+            .form-general__row
+              input.form-general__submit.button(type="submit", value="Отправить")
+
+
+
+    .page__footer
+      +footer()
+      //- +popup()#callback.mfp-hide
+      //- +popup-thanks()#callback-thanks.mfp-hide
+
+    //- script(src="https://api-maps.yandex.ru/2.1/?apikey=d491e610-d9d0-4022-9b4c-e2d184cf5425&lang=ru_RU")
+    script(src='%=static=%js/separate-js/lazyload.min.js' )
+    script(src='%=static=%js/separate-js/jquery.min.js')
+    script(src='%=static=%js/separate-js/slick.min.js')
+    script(src='%=static=%js/separate-js/wNumb.min.js')
+    script(src='%=static=%js/separate-js/nouislider.min.js')
+    //- script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
+
+  //- script.
+  //-   ymaps.ready(init);
+    
+  //-   function init() {
+  //-     var myMap = new ymaps.Map('map', {
+  //-       center: [55.720418, 37.772047], 
+  //-       zoom: 17,
+  //-       controls: ['']
+  //-     }, {
+  //-           searchControlProvider: ''
+  //-       });
+
+  //-     var myPlacemark = new ymaps.Placemark(
+  //-       [55.720418, 37.772047], {
+  //-           balloonContent: '109428, Город Москва, Рязанский проспект, дом 26, строение 13, эт 3 пом 1 ком 13'
+  //-       }, {
+  //-           //- iconLayout: 'default#image',
+  //-           //- iconImageHref: 'assets/images/general/marker.png',
+  //-           //- iconImageSize: [14, 19],
+  //-       }      
+  //-     );
+
+  //-     myMap.geoObjects.add(myPlacemark);
+
+  //-   }

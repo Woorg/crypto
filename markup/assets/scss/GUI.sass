@@ -14,6 +14,46 @@
     left: 0
     content: ""
     @include bg($dots)
+    
+.title_inner
+  padding-bottom: 0
+  font-size: 28px
+  font-weight: 700
+  line-height: 40px
+  letter-spacing: 1.12px
+  &:after
+    display: none
+    
+.title_h1
+  padding-bottom: 0
+  &:after
+    display: none
+.title_h2
+  padding-bottom: 0
+  font-size: 35px
+  &:after
+    display: none
+.title_h3
+  padding-bottom: 0
+  font-size: 28px
+  &:after
+    display: none
+
+.title_h4
+  padding-bottom: 0
+  font-size: 23px
+  &:after
+    display: none
+
+.title_h5
+  padding-bottom: 0
+  font-size: 20px
+  &:after
+    display: none
+    
+
+
+
 
 .text
   font-size: 14px
@@ -45,6 +85,8 @@
     background-color: #14be7a
     @include tr(all .3s ease)
     
+.button_active
+  background-color: #14be7a
 
 .button_secondary
   border: 1px solid #d1d1d1
@@ -70,8 +112,79 @@
     color: #000 
     font-weight: 500
     text-decoration: none
-
+    
+.button_secondary_active
+  border: 1px solid #09a868
+  color: #000000
+  text-decoration: none
   
+.button_w_arrow
+  position: relative
+  padding-left: 43px
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.16)
+  &:after
+    position: absolute
+    top: 50%
+    left: 20px
+    content: ""
+    @include bg($button-arrow)
+    transform: translateY(-50%)
+    
+.table-w
+  border: 1px solid #e6e6e6
+  width: 330px
+  border-radius: 10px
+
+.table
+  border-bottom: 1px solid #e6e6e6
+  border-collapse: collapse
+  width: 100%
+  background-color: #ffffff
+  text-align: left
+  overflow: hidden
+  border-radius: 10px
+  &__header
+    border-radius: 10px 10px 0 0
+    background-color: #005651
+    th
+      padding-top: 15px
+      padding-right: 20px
+      padding-bottom: 15px
+      padding-left: 20px
+      color: #ffffff
+      font-size: 12px
+      font-weight: 500
+      line-height: 1
+      &:first-child
+        border-right: 1px solid #004844
+        border-radius: 10px 0 0 0
+      &:last-child
+        border-radius: 0 10px 0 0  
+
+  &__row
+    
+    td
+      padding-top: 15px
+      padding-right: 20px
+      padding-bottom: 15px
+      padding-left: 20px
+      color: #000000
+      font-size: 13px
+      font-weight: 500
+      line-height: 1
+      &:first-child
+        border-right: 1px solid #d5e0e0
+        color: #000000
+        font-size: 13px
+        font-weight: 500
+      &:last-child
+        border-right: 1px solid #e6e6e6
+        color: #09a868
+        font-size: 15px
+        font-weight: 700
+
+
+
 
   
 .wysiwyg
@@ -90,3 +203,5 @@
     font-size: 14px
     font-weight: 400
     line-height: 1.714
+    
+

@@ -1,23 +1,10 @@
 mixin cta(data)
-  section.cta.lazy(data-bg="url('assets/images/general/cta-bg.png')")&attributes(attributes)
+  section.cta.lazy(data-bg="url('assets/images/general/cta-bg.jpg')")&attributes(attributes)
     .cta__container.container
-      .cta__w
-        h2.cta__title <span>Оставьте заявку на выполнение работ</span> и получите бесплатную консультацию нашего специалиста!
-        img.cta__image.lazy(data-src="assets/images/general/builder.png", alt="")
-        .cta__form.form
-          form.form__w(action="", method="post")
-            .form__row
-              .form__field.form__field_input.form__field_name
-                input.form__input(type="text", value="", placeholder="Ваше имя")
-              .form__field.form__field_input.form__field_phone
-                input.form__input(type="text", value="", placeholder="Ваш телефон")
-              .form__submit-w.button.button_secondary
-                input.form__submit(type="submit", value="Заказать звонок")
-
-            .form__privacy
-              label
-                input(type="checkbox" name="" value="1" class="form__checkbox" checked)
-                span.wpcf7-list-item-label Нажимая кнопку "Заказать звонок" я даю согласие на обработкуя данных и соглашаюсь с Политикой конфиденциальности.
-
-
-    
+      h2.cta__title 
+        em Зарегистрируйтесь 
+        | и получите 
+        span бонус 1$
+        != pugHelpers.Icon.call(locals, {iconName: 'cta-icon', className: 'cta__icon', iconWidth: '58', iconHeight: '59'})
+      
+      a.cta__button.button(href="#") Зарегистрироваться

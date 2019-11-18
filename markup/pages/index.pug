@@ -33,7 +33,7 @@ html(class="no-js", lang="ru")
 
 
   head
-      +head(head.defaults)
+    +head(head.defaults)
   body.page
     |%=symbols=%
     //- end header
@@ -57,13 +57,12 @@ html(class="no-js", lang="ru")
       //- +popup()#callback.mfp-hide
       //- +popup-thanks()#callback-thanks.mfp-hide
 
-
-  //- script(src="https://api-maps.yandex.ru/2.1/?apikey=d491e610-d9d0-4022-9b4c-e2d184cf5425&lang=ru_RU")
-  script(src='%=static=%js/separate-js/lazyload.min.js')
-  script(src='%=static=%js/separate-js/jquery.min.js')
-  script(src='%=static=%js/separate-js/slick.min.js')
-  //- script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
-  script(src='%=static=%js/main%=hash=%%=min=%.js')
+    //- script(src="https://api-maps.yandex.ru/2.1/?apikey=d491e610-d9d0-4022-9b4c-e2d184cf5425&lang=ru_RU")
+    script(src='%=static=%js/separate-js/lazyload.min.js' )
+    script(src='%=static=%js/separate-js/jquery.min.js')
+    script(src='%=static=%js/separate-js/slick.min.js')
+    //- script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
 
   //- script.
   //-   ymaps.ready(init);
