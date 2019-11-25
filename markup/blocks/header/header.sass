@@ -70,6 +70,24 @@
     @include r(580px)
       width: 100%
       justify-content: center
+      
+  &__auth_authorised
+    .header__auth-icon
+      fill: #11a478
+    .header__auth-button
+      margin-right: 30px
+      text-decoration: none
+      font-weight: 500
+      color: #000
+      &:last-child
+        margin-right: 0
+      
+    .header__auth-button_enter
+      color: #FFF 
+
+    .header__auth-sep
+      display: none
+    
 
   &__auth-button
     // padding-top: 12px
@@ -88,7 +106,8 @@
   &__auth-button_enter
     // padding-top: 12px
     padding-right: 26px
-    padding-left: 13px
+    padding-left: 26px
+    // padding-left: 13px
     background-color: #11a478
     color: #FFF
     font-weight: 500

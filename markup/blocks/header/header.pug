@@ -97,12 +97,12 @@ mixin header-personal(data)
                 span.lang__text ch
 
 
-        .header__auth
-          a.header__auth-button.header__auth-button_enter(href="#")
+        .header__auth.header__auth_authorised
+          a.header__auth-button(href="#")
             != pugHelpers.Icon.call(locals, {iconName: 'person-icon', className: 'header__auth-icon', iconWidth: '19', iconHeight: '19'})
-            | Войти
+            | Alex
           a.header__auth-sep или  
-          a.header__auth-button(href="#") зарегистрироваться
+          a.header__auth-button.header__auth-button_enter(href="#") Выйти
      
     .header__bottom
       .header__container.container

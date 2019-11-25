@@ -218,7 +218,7 @@ table {
   top: 100%;
   left: 0;
   content: "";
-  background-image: url(../images/png-sprite/96dpi/spritechsgbd.png);
+  background-image: url(../images/png-sprite/96dpi/spritehpr1c4.png);
   background-position: -88px -74px;
   width: 28px;
   height: 6px;
@@ -228,13 +228,13 @@ table {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .title:after {
-    background-image: url(../images/png-sprite/192dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/192dpi/spritehpr1c4.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .title:after {
-    background-image: url(../images/png-sprite/288dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/288dpi/spritehpr1c4.png);
   }
 }
 
@@ -384,7 +384,7 @@ table {
   top: 50%;
   left: 20px;
   content: "";
-  background-image: url(../images/png-sprite/96dpi/spritechsgbd.png);
+  background-image: url(../images/png-sprite/96dpi/spritehpr1c4.png);
   background-position: -36px -88px;
   width: 12px;
   height: 8px;
@@ -397,13 +397,13 @@ table {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .button_w_arrow:after {
-    background-image: url(../images/png-sprite/192dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/192dpi/spritehpr1c4.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .button_w_arrow:after {
-    background-image: url(../images/png-sprite/288dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/288dpi/spritehpr1c4.png);
   }
 }
 
@@ -770,6 +770,29 @@ img {
   }
 }
 
+.header__auth_authorised .header__auth-icon {
+  fill: #11a478;
+}
+
+.header__auth_authorised .header__auth-button {
+  margin-right: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+}
+
+.header__auth_authorised .header__auth-button:last-child {
+  margin-right: 0;
+}
+
+.header__auth_authorised .header__auth-button_enter {
+  color: #FFF;
+}
+
+.header__auth_authorised .header__auth-sep {
+  display: none;
+}
+
 .header__auth-button {
   height: 36px;
   display: -webkit-box;
@@ -794,7 +817,7 @@ img {
 
 .header__auth-button_enter {
   padding-right: 26px;
-  padding-left: 13px;
+  padding-left: 26px;
   background-color: #11a478;
   color: #FFF;
   font-weight: 500;
@@ -1305,7 +1328,7 @@ img {
 }
 
 .stats__item_1 .stats__icon {
-  background-image: url(../images/png-sprite/96dpi/spritechsgbd.png);
+  background-image: url(../images/png-sprite/96dpi/spritehpr1c4.png);
   background-position: 0px 0px;
   width: 40px;
   height: 40px;
@@ -1315,18 +1338,18 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .stats__item_1 .stats__icon {
-    background-image: url(../images/png-sprite/192dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/192dpi/spritehpr1c4.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .stats__item_1 .stats__icon {
-    background-image: url(../images/png-sprite/288dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/288dpi/spritehpr1c4.png);
   }
 }
 
 .stats__item_2 .stats__icon {
-  background-image: url(../images/png-sprite/96dpi/spritechsgbd.png);
+  background-image: url(../images/png-sprite/96dpi/spritehpr1c4.png);
   background-position: -44px 0px;
   width: 40px;
   height: 40px;
@@ -1336,18 +1359,18 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .stats__item_2 .stats__icon {
-    background-image: url(../images/png-sprite/192dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/192dpi/spritehpr1c4.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .stats__item_2 .stats__icon {
-    background-image: url(../images/png-sprite/288dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/288dpi/spritehpr1c4.png);
   }
 }
 
 .stats__item_3 .stats__icon {
-  background-image: url(../images/png-sprite/96dpi/spritechsgbd.png);
+  background-image: url(../images/png-sprite/96dpi/spritehpr1c4.png);
   background-position: 0px -44px;
   width: 40px;
   height: 40px;
@@ -1357,18 +1380,18 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .stats__item_3 .stats__icon {
-    background-image: url(../images/png-sprite/192dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/192dpi/spritehpr1c4.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .stats__item_3 .stats__icon {
-    background-image: url(../images/png-sprite/288dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/288dpi/spritehpr1c4.png);
   }
 }
 
 .stats__item_4 .stats__icon {
-  background-image: url(../images/png-sprite/96dpi/spritechsgbd.png);
+  background-image: url(../images/png-sprite/96dpi/spritehpr1c4.png);
   background-position: -44px -44px;
   width: 40px;
   height: 40px;
@@ -1378,18 +1401,18 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .stats__item_4 .stats__icon {
-    background-image: url(../images/png-sprite/192dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/192dpi/spritehpr1c4.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .stats__item_4 .stats__icon {
-    background-image: url(../images/png-sprite/288dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/288dpi/spritehpr1c4.png);
   }
 }
 
 .stats__item_5 .stats__icon {
-  background-image: url(../images/png-sprite/96dpi/spritechsgbd.png);
+  background-image: url(../images/png-sprite/96dpi/spritehpr1c4.png);
   background-position: -88px 0px;
   width: 40px;
   height: 40px;
@@ -1399,13 +1422,13 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .stats__item_5 .stats__icon {
-    background-image: url(../images/png-sprite/192dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/192dpi/spritehpr1c4.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .stats__item_5 .stats__icon {
-    background-image: url(../images/png-sprite/288dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/288dpi/spritehpr1c4.png);
   }
 }
 
@@ -2741,7 +2764,7 @@ img {
   height: 25px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  background-image: url(../images/png-sprite/96dpi/spritechsgbd.png);
+  background-image: url(../images/png-sprite/96dpi/spritehpr1c4.png);
   background-position: -88px -44px;
   width: 26px;
   height: 26px;
@@ -2751,13 +2774,13 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .affiliate__avatar {
-    background-image: url(../images/png-sprite/192dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/192dpi/spritehpr1c4.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .affiliate__avatar {
-    background-image: url(../images/png-sprite/288dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/288dpi/spritehpr1c4.png);
   }
 }
 
@@ -2853,7 +2876,7 @@ img {
 }
 
 .affiliate .slick-arrow {
-  background-image: url(../images/png-sprite/96dpi/spritechsgbd.png);
+  background-image: url(../images/png-sprite/96dpi/spritehpr1c4.png);
   background-position: 0px -88px;
   width: 12px;
   height: 20px;
@@ -2863,13 +2886,13 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .affiliate .slick-arrow {
-    background-image: url(../images/png-sprite/192dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/192dpi/spritehpr1c4.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .affiliate .slick-arrow {
-    background-image: url(../images/png-sprite/288dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/288dpi/spritehpr1c4.png);
   }
 }
 
@@ -4452,7 +4475,7 @@ img {
 
 .side-nav__item_withdraw .side-nav__icon {
   left: 23px;
-  background-image: url(../images/png-sprite/96dpi/spritechsgbd.png);
+  background-image: url(../images/png-sprite/96dpi/spritehpr1c4.png);
   background-position: -16px -88px;
   width: 16px;
   height: 12px;
@@ -4462,13 +4485,13 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .side-nav__item_withdraw .side-nav__icon {
-    background-image: url(../images/png-sprite/192dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/192dpi/spritehpr1c4.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .side-nav__item_withdraw .side-nav__icon {
-    background-image: url(../images/png-sprite/288dpi/spritechsgbd.png);
+    background-image: url(../images/png-sprite/288dpi/spritehpr1c4.png);
   }
 }
 
